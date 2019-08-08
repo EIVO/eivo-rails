@@ -37,10 +37,6 @@ sentry:
   dsn: ""
 ```
 
-### Warning
-
-SSL / TLS must be managed by the web server (nginx), don't enable `force_ssl` option.
-
 ## License
 
 This project is released under the MIT license. See the LICENSE file for more info.
