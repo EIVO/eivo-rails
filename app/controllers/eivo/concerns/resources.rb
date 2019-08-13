@@ -18,7 +18,9 @@ module EIVO
       end
 
       def create
-        @object ||= collection.new(object_params_create)
+        @object ||= collection.new
+        @object.assign_attributes(object_params_create)
+
         if @object.save
           redirect_to action: :index
         else
@@ -32,6 +34,8 @@ module EIVO
 
       def update
         @object ||= collection.find(params[:id])
+        @object.assign_attributes(object_params_update)
+
         if @object.update(object_params_update)
           redirect_to action: :index
         else
