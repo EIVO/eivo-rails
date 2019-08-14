@@ -46,8 +46,8 @@ module EIVO
         redirect_to action: :index
       end
 
-    protected
-      
+      protected
+
       def collection
         raise NotImplementedError
       end
@@ -63,7 +63,6 @@ module EIVO
       def object_params_update
         object_params
       end
-    
     end
   end
 end
