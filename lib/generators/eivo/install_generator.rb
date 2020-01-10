@@ -51,6 +51,7 @@ module EIVO
         ### EIVO begin ###
 
         bundle exec rails assets:precompile
+        bundle exec bin/webpack
         bundle exec pumactl -F config/puma.rb restart
 
         ### EIVO end ###
@@ -68,6 +69,7 @@ module EIVO
         #!/usr/bin/env bash
         export RACK_ENV="production"
         export RAILS_ENV="production"
+        export NODE_ENV="production"
 
       EIVO_COMMAND
 
@@ -75,6 +77,7 @@ module EIVO
         #!/usr/bin/env bash
         export RACK_ENV="staging"
         export RAILS_ENV="staging"
+        export NODE_ENV="production"
 
       EIVO_COMMAND
 
