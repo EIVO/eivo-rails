@@ -22,8 +22,8 @@ Or install it yourself as:
 
 If you don't have a Ruby On Rails project:
 
-	$ rails new ../example/ -d postgresql --skip-yarn --skip-active-storage --skip-action-cable --skip-spring --skip-coffee --skip-turbolinks --skip-test --skip-system-test --skip-bootsnap --skip-action-mailer
-
+	$ rails new ../example/ -d postgresql --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage --skip-action-cable --skip-spring --skip-turbolinks --skip-test --skip-system-test --skip-bootsnap
+ 
 Then:
 
 	$ rails g eivo:install

@@ -10,7 +10,7 @@ require_relative 'eivo-rails/engine'
 module EIVO
   class << self
     def configure(application)
-      application.config.load_defaults 5.2
+      application.config.load_defaults 6.0
       application.config.require_master_key = true
 
       application.config.generators do |g|
