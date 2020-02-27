@@ -70,6 +70,7 @@ module EIVO
         export RACK_ENV="production"
         export RAILS_ENV="production"
         export NODE_ENV="production"
+        export RAILS_DAEMONIZE="true"
 
       EIVO_COMMAND
 
@@ -78,6 +79,7 @@ module EIVO
         export RACK_ENV="staging"
         export RAILS_ENV="staging"
         export NODE_ENV="production"
+        export RAILS_DAEMONIZE="true"
 
       EIVO_COMMAND
 
