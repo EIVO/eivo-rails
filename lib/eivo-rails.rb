@@ -6,6 +6,7 @@ require 'oj'
 require 'multi_json'
 
 require_relative 'eivo-rails/engine'
+require_relative 'eivo-rails/formatter'
 
 module EIVO
   class << self
