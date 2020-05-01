@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |spec|
   spec.name          = 'eivo-rails'
-  spec.version       = '0.1.6'
+  spec.version       = '0.1.7'
   spec.authors       = ['Jonathan VUKOVICH-TRIBOUHARET']
   spec.email         = ['jonathan@eivo.co']
 
@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'oj'
 
   spec.add_dependency 'sentry-raven'
+  spec.add_dependency 'lograge'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
